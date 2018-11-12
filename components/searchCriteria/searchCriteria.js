@@ -1,12 +1,12 @@
 "use strict";
 const searchCriteria = {
-    templateUrl: "searchCriteria.html",
-    controller: ["SearchService", function(SearchService) {
+    templateUrl: "components/searchCriteria/searchCriteria.html",
+    controller: ["$rootScope", "SearchService", function($rootScope, SearchService) {
         const vm = this;
         vm.search = (searchTerms) => {
             SearchService.searchEdamam(searchTerms).then((data) => {
                 vm.result = data;
-                console.log(data);
+                $rootScope.$broadcast("castRecipes");
             });
         };
     }]
