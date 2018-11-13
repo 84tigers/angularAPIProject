@@ -1,3 +1,15 @@
 <input type="text" ng-model="$ctrl.searchTerms">
 <button type="button" ng-click="$ctrl.search($ctrl.searchTerms)">Seerch</button>
-<recipe-list></recipe-list>
+<section>
+    <input ng-model="$ctrl.peanut" type="radio" value="&health=peanut-free"><span>Peuonuot-Free</span>
+    <input ng-model="$ctrl.vegan" type="radio" value="&health=vegan"><span>Feguon</span>
+    <input ng-model="$ctrl.vegetarian" type="radio" value="&health=vegetarian"><span>Fegeteriuon</span>
+    <input ng-model="$ctrl.lowCarb" type="radio" value="&diet=low-carb"><span>Luo-Cerb</span>
+    <input ng-model="$ctrl.lowFat" type="radio" value="&diet=low-fat"><span>Luo-Fet</span>
+</section>
+<section>
+    <span>Shuo me-a meels less thuon</span><input ng-model="$ctrl.calories" type="number"><span>Celuries</span>
+</section>
+<section>
+    <span>Shuo me-a meels zeet vill teke-a less thuon</span><input ng-model="$ctrl.cookTime" type="number"><span>meenuotes tu cuok. Bork Bork Bork!</span>
+</section>
