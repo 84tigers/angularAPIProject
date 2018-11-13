@@ -3,10 +3,14 @@ const searchCriteria = {
     templateUrl: "components/searchCriteria/searchCriteria.html",
     controller: ["$rootScope", "SearchService", function($rootScope, SearchService) {
         const vm = this;
-        console.log("test");
+        vm.peanut = "";
+        vm.vegan = "";
+        vm.vegetarian = "";
+        vm.lowCarb = "";
+        vm.lowFat = "";
         vm.search = (searchTerms) => {
             
-            SearchService.searchEdamam(searchTerms).then((data) => {
+            SearchService.searchEdamam(searchTerms, vm.peanut, vm.vegan, vm.vegetarian, vm.lowCarb, vm.lowFat, vm.calories, vm.cookTime).then((data) => {
                 vm.result = data;
                 $rootScope.$broadcast("castRecipes");
             });
