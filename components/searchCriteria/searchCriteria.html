@@ -1,15 +1,15 @@
 <input type="text" ng-model="$ctrl.searchTerms">
 <button type="button" ng-click="$ctrl.search($ctrl.searchTerms)">Seerch</button>
 <section>
-    <input type="radio"><span>Dairy Free</span>
-    <input type="radio"><span>Peanut-Free</span>
-    <input type="radio"><span>Shellfish-Free</span>
-    <input type="radio"><span>Vegan</span>
-    <input type="radio"><span>Vegetarian</span>
+    <input ng-model="$ctrl.peanut" type="radio" value="&health=peanut-free"><span>Peuonuot-Free</span>
+    <input ng-model="$ctrl.vegan" type="radio" value="&health=vegan"><span>Feguon</span>
+    <input ng-model="$ctrl.vegetarian" type="radio" value="&health=vegetarian"><span>Fegeteriuon</span>
+    <input ng-model="$ctrl.lowCarb" type="radio" value="&diet=low-carb"><span>Luo-Cerb</span>
+    <input ng-model="$ctrl.lowFat" type="radio" value="&diet=low-fat"><span>Luo-Fet</span>
 </section>
 <section>
-    <span>Show me meals less than</span><input type="number"><span>Calories</span>
+    <span>Show me meals less than</span><input ng-model="$ctrl.calories" type="number"><span>Calories</span>
 </section>
 <section>
-    <span>Show me meals that will take less than</span><input type="number"><span>minutes to cook.</span>
+    <span>Show me meals that will take less than</span><input ng-model="$ctrl.cookTime" type="number"><span>minutes to cook.</span>
 </section>
