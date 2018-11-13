@@ -58,6 +58,7 @@ nav {
     width: 50%;
     height: 10%;
     margin-top: 40px;
+    cursor: pointer;
 }
 
 .home-content-container {
@@ -97,6 +98,7 @@ nav {
     border-radius: 100%;
     padding: 5px;
     border: 5px solid white;
+    cursor: pointer;
 }
 
 .recipe-info {
@@ -118,6 +120,7 @@ nav {
     position: absolute;
     bottom: 30px;
     right: 0px;
+    cursor: pointer;
 }
 
 .recipes-container {
