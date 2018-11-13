@@ -1,6 +1,8 @@
-<section ng-repeat="recipe in $ctrl.recipes">
-    <img src={{recipe.recipe.image}}>
-    <p>{{recipe.recipe.label}}</p>
-    <img src="/images/l_rubber_chicken.jpg" ng-click="$ctrl.favRecipe(recipe)">
-    <p>Edd tu Fefurites</p>
+<section class="recipe-card" ng-repeat="recipe in $ctrl.recipes">
+    <img class="recipe-fav-icon" src="images/chef-hat-pink.png" ng-click="$ctrl.favRecipe(recipe)">
+    <img class="recipe-img" src={{recipe.recipe.image}}>
+    <section class="recipe-info">
+        <p class="recipe-label">{{recipe.recipe.label}}</p>
+        <img src="" alt="" class="recipe-more-info">
+    </section>
 </section>
