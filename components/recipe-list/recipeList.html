@@ -1,5 +1,6 @@
 <section ng-repeat="recipe in $ctrl.recipes">
     <img src={{recipe.recipe.image}}>
     <p>{{recipe.recipe.label}}</p>
-    <p>Add to Favorites</p>
+    <img src="/images/l_rubber_chicken.jpg" ng-click="$ctrl.favRecipe(recipe)">
+    <p>Edd tu Fefurites</p>
 </section>

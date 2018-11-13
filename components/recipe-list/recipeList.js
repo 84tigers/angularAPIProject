@@ -6,8 +6,11 @@ const recipeList = {
 
         $rootScope.$on("castRecipes", (event) => {
             vm.recipes = SearchService.getRecipes().data.hits
-            console.log(vm.recipes);
         });
+
+        vm.favRecipe = (recipe) => {
+            SearchService.addFav(recipe);
+        };
     }]
 
 };
