@@ -1,5 +1,6 @@
 body {
     font-family: 'Concert One', cursive;
+    color: rgb(41, 8, 8);
 }
 
 a {
@@ -58,6 +59,7 @@ nav {
     width: 50%;
     height: 10%;
     margin-top: 40px;
+    cursor: pointer;
 }
 
 .home-content-container {
@@ -81,31 +83,82 @@ nav {
     border-radius: 5px;
 }
 
+/* Filter Search Critera */
+
+.search-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+/* .chicken-img {
+    width: 10%;
+    height: 10%;
+} */
+
+.search-input-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.search-input {
+    width: 30%;
+    padding: 10px;
+    font-size: 20px;
+    opacity: .7;
+    font-family: 'Concert One', cursive;
+}
+
+.searchcritera-btn {
+    background-color: #e95687;
+    color: white;
+    font-family: 'Concert One', cursive;
+    font-size: 20px;
+    margin-left: 10px;
+    width: 15%;
+    border-radius: 5px;
+    border: none;
+}
+
+.radio-container {
+    font-size: 20px;
+}
+
+.number-input-container {
+    font-size: 20px;
+}
+
 /* recipe card */
 .recipe-card {
     margin: 10px;
     position: relative;
     width: 300px;
-    height: 375px;
-    box-shadow: 0 0 10px 0 rgb(41, 8, 8);
+    height: 395px;
+    box-shadow: 0 3px 10px rgb(41, 8, 8);
 }
 
 .recipe-fav-icon {
     position: absolute;
     left: 10px;
-    top: 5px;
+    top: 10px;
     border-radius: 100%;
     padding: 5px;
     border: 5px solid white;
+    cursor: pointer;
 }
 
 .recipe-info {
     width: 300px;
-    height: 60px;
+    height: 80px;
     border-bottom: 15px solid #2592db;
 }
 
 .recipe-label {
+    width: 260px;
     margin-top: 0px;
     font-size: 1.3em;
     margin-left: 10px;
@@ -113,14 +166,17 @@ nav {
 }
 
 .recipe-more-info {
-    display: inline-block;
+    color: #e95687;
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+    cursor: pointer;
 }
 
 .recipes-container {
     display: flex;
     flex-wrap: wrap;
 }
-
 
 .details-container {
     display: none;
@@ -152,4 +208,10 @@ nav {
 
 .recipe-link {
     color: #2592db;
+/* favorites */
+
+.delete-icon {
+    width: 20%;
+    height: 20%;
+    color: #e95687;
 }
