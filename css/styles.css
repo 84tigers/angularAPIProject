@@ -1,5 +1,6 @@
 body {
     font-family: 'Concert One', cursive;
+    color: rgb(41, 8, 8);
 }
 
 a {
@@ -81,6 +82,55 @@ nav {
     border-radius: 5px;
 }
 
+/* Filter Search Critera */
+
+.search-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+/* .chicken-img {
+    width: 10%;
+    height: 10%;
+} */
+
+.search-input-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.search-input {
+    width: 30%;
+    padding: 10px;
+    font-size: 20px;
+    opacity: .7;
+    font-family: 'Concert One', cursive;
+}
+
+.searchcritera-btn {
+    background-color: #e95687;
+    color: white;
+    font-family: 'Concert One', cursive;
+    font-size: 20px;
+    margin-left: 10px;
+    width: 15%;
+    border-radius: 5px;
+    border: none;
+}
+
+.radio-container {
+    font-size: 20px;
+}
+
+.number-input-container {
+    font-size: 20px;
+}
+
 /* recipe card */
 .recipe-card {
     margin: 10px;
@@ -119,4 +169,12 @@ nav {
 .recipes-container {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* favorites */
+
+.delete-icon {
+    width: 20%;
+    height: 20%;
+    color: #e95687;
 }
