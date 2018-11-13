@@ -30,10 +30,11 @@ function SearchService($http) {
     };
     self.getFavs = () => {
         return self.favorites;
-    }
+    };
     self.getRecipes = () => {
         return self.jsonPayload;
-    }
+    };
+    
 }
 
 
