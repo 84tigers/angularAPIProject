@@ -25,7 +25,7 @@ function SearchService($http) {
         })
     };
     self.addFav = (recipe) => {
-        self.favorites.push(recipe);
+        self.favorites.push(recipe.recipe);
         console.log(self.favorites)
     };
     self.getFavs = () => {
