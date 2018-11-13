@@ -1,24 +1,12 @@
 "use strict";
 const home = {
     templateUrl: "components/home-page/home.html",
-    controller: ["$rootScope", "SearchService", function($rootScope, SearchService) {
+    controller: ["$location", "SearchService", function($location, SearchService) {
         const vm = this;
-        vm.recipes = SearchService.getFeaturedRecipes().data.hits
-        // vm.features = () => {
-        //     SearchService.featuredRecipes().then((data) => {
-        //         vm.result = data;
-        //         $rootScope.$broadcast("castFeaturedRecipes");
-        //     });
-        // };
-
-        // vm.search = (searchTerms) => {
-        //     SearchService.searchEdamam(searchTerms).then((data) => {
-        //         vm.result = data;
-        //         $rootScope.$broadcast("castRecipes");
-        //     });
-        // };
+        vm.goSearch = () => {
+            $location.path('/search');
+        };
     }]
 }
-
 
 angular.module("App").component("home", home);
