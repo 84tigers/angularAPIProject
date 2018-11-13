@@ -178,6 +178,36 @@ nav {
     flex-wrap: wrap;
 }
 
+.details-container {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items:center;
+    top: 0px;
+    left: 0px;
+    z-index: 999999999;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.recipe-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    width: 50%;
+}
+
+.ingredients {
+    margin: 0px;
+}
+
+.details-title {
+    font-size: 1.25em;
+}
+
+.recipe-link {
+    color: #2592db;
 /* favorites */
 
 .delete-icon {

@@ -5,6 +5,15 @@
         <img class="recipe-img" src={{recipe.recipe.image}}>
         <section class="recipe-info">
             <p class="recipe-label">{{recipe.recipe.label}}</p>
+            <span show-info><img src="" alt="" class="recipe-more-info">More Info
+            <section class="details-container">
+                <section class="recipe-details">
+                    <p class="details-title">{{recipe.recipe.label}}</p>
+                    <a class="recipe-link" href={{recipe.recipe.url}} target="_blank">See Full Recipe</a>
+                    <p class="ingredients" ng-repeat="ingredient in recipe.recipe.ingredients">{{ingredient.text}}</p>
+                </section>
+            </section>
+
         </section>
     </section>
 </section>
