@@ -5,6 +5,6 @@ angular
         $routeProvider
             .when("/search", {templateUrl: "search.html"})
             .when("/favorites", {templateUrl: "components/favorites-page/favorites.html"})
-            .when("/home", {templateUrl: "components/home-page/home.html"})
+            .when("/home", {template: "<home></home>"})
             .otherwise({redirectTo: "/home"})
     }]);
