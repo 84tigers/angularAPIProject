@@ -2,6 +2,7 @@
 function SearchService($http) {
     const self = this;
     self.jsonPayload = null;
+    self.favorites = [];
 
     self.searchEdamam = (searchTerms) => {
         return $http({
@@ -12,7 +13,13 @@ function SearchService($http) {
             return self.jsonPayload;
         })
     };
-
+    self.addFav = (recipe) => {
+        self.favorites.push(recipe);
+        console.log(self.favorites)
+    };
+    self.getFavs = () => {
+        return self.favorites;
+    }
     self.getRecipes = () => {
         return self.jsonPayload;
     }
