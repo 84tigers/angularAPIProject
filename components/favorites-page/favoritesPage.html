@@ -1,9 +1,9 @@
 <p class="favorite-title">Fefurites</p>
 <section class="recipes-container">
     <section class="recipe-card" ng-repeat="fav in $ctrl.favs">
-        <img class="recipe-img" src={{fav.recipe.image}}>
+        <img class="recipe-img" src={{fav.image}}>
         <section class="recipe-info">
-            <p class="recipe-label">{{fav.recipe.label}}</p>
+            <p class="recipe-label">{{fav.label}}</p>
             <img src="" alt="" class="recipe-more-info">
             <img class="delete-icon" src="images/delete.png" ng-click="">
         </section>
