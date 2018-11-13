@@ -86,14 +86,14 @@ nav {
     margin: 10px;
     position: relative;
     width: 300px;
-    height: 375px;
-    box-shadow: 0 0 10px 0 rgb(41, 8, 8);
+    height: 395px;
+    box-shadow: 0 3px 10px rgb(41, 8, 8);
 }
 
 .recipe-fav-icon {
     position: absolute;
     left: 10px;
-    top: 5px;
+    top: 10px;
     border-radius: 100%;
     padding: 5px;
     border: 5px solid white;
@@ -101,11 +101,12 @@ nav {
 
 .recipe-info {
     width: 300px;
-    height: 60px;
+    height: 80px;
     border-bottom: 15px solid #2592db;
 }
 
 .recipe-label {
+    width: 260px;
     margin-top: 0px;
     font-size: 1.3em;
     margin-left: 10px;
@@ -113,7 +114,10 @@ nav {
 }
 
 .recipe-more-info {
-    display: inline-block;
+    color: #e95687;
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
 }
 
 .recipes-container {
