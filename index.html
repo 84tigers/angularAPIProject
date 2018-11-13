@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 <body>
+    <section class="nav-bar">
     <a href="#!/home">Home</a>
-    <nav><a href="#!/search">Seerch</a><a href="#!/favorites">Fefurites</a></nav>
-    
+    <nav>
+        <a href="#!/search">Seerch</a>
+        <a href="#!/favorites">Fefurites</a>
+    </nav>
+    </section>
+
     <ng-view></ng-view>
     
     <script src="https://code.angularjs.org/1.6.5/angular.min.js"></script>
@@ -19,5 +26,6 @@
     <script src="components/recipe-list/recipeList.js"></script>
     <script src="components/searchCriteria/searchCriteria.js"></script>
     <script src="services/searchService.js"></script>
+    <script src="components/home-page/home.js"></script>
 </body>
 </html>
