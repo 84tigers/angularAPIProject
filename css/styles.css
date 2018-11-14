@@ -109,7 +109,7 @@ nav {
 
 .search-container input {
     border: 1px solid black;
-    margin: 2px;
+    margin: 5px;
     border-radius: 5px; 
 }
 .chicken-img {
@@ -123,6 +123,7 @@ nav {
     display: flex;
     justify-content: center;
     margin: 50px 0;
+    margin-bottom: 25px;
 }
 
 .search-input {
