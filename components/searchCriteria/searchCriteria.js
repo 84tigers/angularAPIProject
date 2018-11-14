@@ -8,11 +8,19 @@ const searchCriteria = {
         vm.vegetarian = "";
         vm.lowCarb = "";
         vm.lowFat = "";
+
         vm.search = (searchTerms) => {
-            
             SearchService.searchEdamam(searchTerms, vm.peanut, vm.vegan, vm.vegetarian, vm.lowCarb, vm.lowFat, vm.calories, vm.cookTime).then((data) => {
                 vm.result = data;
                 $rootScope.$broadcast("castRecipes");
+                vm.searchTerms = "";
+                vm.calories = "";
+                vm.cookTime = "";
+                vm.peanut = "";
+                vm.vegan = "";
+                vm.vegetarian = "";
+                vm.lowCarb = "";
+                vm.lowFat = "";
             });
         };
     }]
