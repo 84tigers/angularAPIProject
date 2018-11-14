@@ -98,10 +98,12 @@ nav {
 
 }
 
-/* .chicken-img {
-    width: 10%;
-    height: 10%;
-} */
+.chicken-img {
+    position: relative;
+    width: 20%;
+    left: 345px;
+    bottom: -9px;
+}
 
 .search-input-container {
     width: 70%;
@@ -139,7 +141,16 @@ nav {
     font-size: 20px;
 }
 
-.number-input-container {
+.number-input {
+    padding: 3px;
+    margin: 0 5px;
+}
+
+.number-cal-container {
+    font-size: 20px;
+}
+
+.number-time-container {
     font-size: 20px;
 }
 
