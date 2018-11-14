@@ -1,21 +1,21 @@
 <p class="favorite-title">Fefurites</p>
 <section class="recipes-container">
-    <section class="recipe-card" ng-repeat="fav in $ctrl.favs">
+    <section ng-class="'recipe-card spin-toggle'" ng-repeat="fav in $ctrl.favs">
         <img src="images/chevron-right.png" alt="" class="recipe-more-info" show-info>
         <img class="recipe-img" src={{fav.image}}>
         <section class="recipe-info">
             <p class="recipe-label">{{fav.label}}</p>
-            <i class="material-icons" ng-click="$ctrl.removeFav($ctrl.fav);">delete</i>
+            <i class="material-icons" ng-click="$ctrl.removeFav(fav);">delete</i>
             <section class="details-container" hide-info>
                     <section class="recipe-details">
-                        <p class="details-title">{{recipe.recipe.label}}</p>
-                        <a class="recipe-link" href={{recipe.recipe.url}} target="_blank">See Full Recipe</a>
+                        <p class="details-title">{{fav.label}}</p>
+                        <a class="recipe-link" href={{fav.url}} target="_blank">See Full Recipe</a>
                         <p class="details-sub">Ingredients</p>
-                        <p class="ingredients" ng-repeat="ingredient in recipe.recipe.ingredients">{{ingredient.text}}</p>
-                        <p class="details-sub">Nutrition Info</p>
-                        <p class="nutrition"><pre>Calories:{{recipe.recipe.calories | number:0}}  Fat:{{recipe.recipe.digest[0].total | number:0}}  Carbs:{{recipe.recipe.digest[1].total | number:0}}  Protein:{{recipe.recipe.digest[2].total | number:0}}  Cholesterol:{{recipe.recipe.digest[3].total | number:0}}  Sodium:{{recipe.recipe.digest[4].total | number:0}}</pre></p>
+                        <p class="ingredients" ng-repeat="ingredient in fav.ingredients">{{ingredient.text}}</p>
+                        <p class="details-sub">Nutrition Info</p>                       
+                        <p class="nutrition"><pre>Calories:{{fav.calories | number:0}}  Fat:{{fav.digest[0].total | number:0}}  Carbs:{{fav.digest[1].total | number:0}}  Protein:{{fav.digest[2].total | number:0}}  Cholesterol:{{fav.digest[3].total | number:0}}  Sodium:{{fav.digest[4].total | number:0}}</pre></p>       
+          <img class="chicken-img" src="images/chicken.png">
                     </section>
-            
         </section>
     </section>
 </section>
