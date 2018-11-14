@@ -5,7 +5,7 @@
         <img class="recipe-img" src={{fav.image}}>
         <section class="recipe-info">
             <p class="recipe-label">{{fav.label}}</p>
-            <i class="material-icons" ng-click="$ctrl.removeFav($ctrl.fav);">delete</i>
+            <i class="material-icons" ng-click="$ctrl.removeFav(fav);">delete</i>
             <section class="details-container" hide-info>
                     <section class="recipe-details">
                         <p class="details-title">{{recipe.recipe.label}}</p>
@@ -14,8 +14,8 @@
                         <p class="ingredients" ng-repeat="ingredient in recipe.recipe.ingredients">{{ingredient.text}}</p>
                         <p class="details-sub">Nutrition Info</p>
                         <p class="nutrition"><pre>Calories:{{recipe.recipe.calories | number:0}}  Fat:{{recipe.recipe.digest[0].total | number:0}}  Carbs:{{recipe.recipe.digest[1].total | number:0}}  Protein:{{recipe.recipe.digest[2].total | number:0}}  Cholesterol:{{recipe.recipe.digest[3].total | number:0}}  Sodium:{{recipe.recipe.digest[4].total | number:0}}</pre></p>
+                        <img class="chicken-img" src="images/chicken.png">
                     </section>
-            
         </section>
     </section>
 </section>
