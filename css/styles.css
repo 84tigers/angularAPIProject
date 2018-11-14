@@ -38,7 +38,7 @@ nav {
 }
 
 .welcome-text {
-    font-family: 'Concert One', cursive;
+    font-family: 'Montserrat', sans-serif;
     color: #2592db;
     font-size: 40px;
     margin: auto;
@@ -133,9 +133,11 @@ nav {
 
 .searchcritera-btn:hover {
     opacity: .7;
+    cursor: pointer;
 }
 
 .radio-container {
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
 
@@ -152,6 +154,10 @@ nav {
     font-size: 20px;
 }
 
+.number-input-text {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .favorite-title {
     text-align: center;
     font-size: 50px;
@@ -166,6 +172,12 @@ nav {
     width: 300px;
     height: 395px;
     box-shadow: 0 3px 10px rgb(41, 8, 8);
+    border-radius: 10px;
+}
+
+.recipe-img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .recipe-fav-icon {
@@ -186,6 +198,8 @@ nav {
     width: 300px;
     height: 80px;
     border-bottom: 15px solid rgb(37, 146, 219);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .recipe-label {
@@ -252,6 +266,7 @@ nav {
 
 .ingredients {
     margin: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .details-title {
@@ -261,7 +276,7 @@ nav {
 
 .recipe-link {
     color: #2592db;
-    
+    font-family: 'Montserrat', sans-serif;
 }
 
 .delete-icon {
@@ -271,7 +286,7 @@ nav {
 }
 
 .details-sub {
-    font-size: 1.1em;
+    font-size: 1.3em;
     text-decoration: underline;
     margin-bottom: 0px;
     margin-top: 20px;
@@ -279,7 +294,7 @@ nav {
 
 pre {
     margin: 0px;
-    font-family: 'Concert One'
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nutrition {
