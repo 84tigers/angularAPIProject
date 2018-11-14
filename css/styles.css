@@ -67,16 +67,29 @@ nav {
 }
 
 .home-content-container {
-    margin: auto;
-    width: 70%;
+    margin-top: 20px;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    /* width: 70%; */
 }
 
 .home-features {
-    float: left;
+    width: auto;
+    /* flex: 2; */
+    /* display: inline-block; */
+    /* float: left; */
 }
 
 .home-videos {
-    float: right;
+    width: auto;
+    /* flex: 1; */
+    /* margin-right: 0; */
+    /* display: inline-block; */
+
+    /* float: right; */
 }
 
 .features-title,
@@ -87,6 +100,12 @@ nav {
     padding: 5px;
     border-radius: 5px;
 }
+
+.feat-recipe-card {
+    display: inline-block;
+}
+
+
 
 /* Filter Search Critera */
 
