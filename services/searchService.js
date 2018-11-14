@@ -35,6 +35,9 @@ function SearchService($http) {
         return self.jsonPayload;
     };
     
+    self.removeFav = (favCard) => {
+        self.favorites.splice(self.favorites.indexOf(favCard), 1);
+    };
 }
 
 
