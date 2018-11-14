@@ -5,6 +5,11 @@ const favoritesPage = {
         const vm = this;
         vm.favs = SearchService.getFavs();
         console.log(vm.favs);
+
+        vm.removeFav = (favCard) => {
+            SearchService.removeFav(favCard);
+            console.log(favCard);
+           };
     }]
 }
 angular.module("App").component("favoritesPage", favoritesPage);

@@ -1,6 +1,6 @@
 "use strict";
 angular
-    .module("App", ["ngRoute"])
+    .module("App", ["ngRoute", "ngAnimate"])
     .config(["$routeProvider", ($routeProvider) => {
         $routeProvider
             .when("/search", {templateUrl: "search.html"})
