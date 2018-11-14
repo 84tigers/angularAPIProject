@@ -92,17 +92,30 @@ nav {
 
 .search-container {
     display: flex;
+    position: relative;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
+    background: rgba(255, 255, 255, 0.6);
+    width: 66%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    box-shadow: 0 3px 10px rgba(41, 8, 8, 0.5);
 
 }
 
+.search-container input {
+    border: 1px solid black;
+    margin: 2px;
+    border-radius: 5px; 
+}
 .chicken-img {
-    position: relative;
+    justify-self: flex-end;
+    align-self: flex-end;
     width: 20%;
-    left: 345px;
-    bottom: -9px;
 }
 
 .search-input-container {
@@ -200,6 +213,7 @@ nav {
     border-bottom: 15px solid rgb(37, 146, 219);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    background: white;
 }
 
 .recipe-label {
@@ -260,8 +274,17 @@ nav {
     align-items: center;
     background: white;
     width: 50%;
-    padding: 10px;
     box-shadow: 0 3px 10px rgb(41, 8, 8);
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+.recipe-details img {
+    border-bottom-right-radius: 10px;
+}
+
+.recipe-details p {
+    margin: 0px 10px;
 }
 
 .ingredients {
@@ -285,7 +308,7 @@ nav {
     color: #e95687;
 }
 
-.details-sub {
+.recipe-details .details-sub {
     font-size: 1.3em;
     text-decoration: underline;
     margin-bottom: 0px;
@@ -299,4 +322,13 @@ pre {
 
 .nutrition {
     margin: 0px;
+}
+
+.yum-img {
+    position: fixed;
+    opacity: .3;
+    height: 100%;
+    /* width: 50%; */
+    top: 0px;
+    z-index: -99999;   
 }
