@@ -5,11 +5,11 @@ function showInfo() {
         replace: false,
         link: function($scope, $element, $attrs) {
             $element.on("click", () => {
-                if ($element[0].lastElementChild.style.display === "flex") {
-                    $element[0].lastElementChild.style.display = "none"
-                    console.log("words");
+                console.log($element);
+                if ($element[0].nextElementSibling.nextElementSibling.lastElementChild.style.display === "flex") {
+                    $element[0].nextElementSibling.nextElementSibling.lastElementChild.style.display = "none"
                 } else {
-                    $element[0].lastElementChild.style.display = "flex";
+                    $element[0].nextElementSibling.nextElementSibling.lastElementChild.style.display = "flex";
                 }
             });
         }
