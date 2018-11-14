@@ -1,16 +1,18 @@
 <section class="recipes-container">
-    <section class="recipe-card" ng-repeat="recipe in $ctrl.recipes">
+    <section ng-class="'recipe-card rotate-in'" ng-show="$ctrl.display" ng-repeat="recipe in $ctrl.recipes">
         <img class="recipe-fav-icon" src="images/chef-hat-pink.png" ng-click="$ctrl.favRecipe(recipe)">
-        <img src="images/chevron-right.png" alt="" class="recipe-more-info">
+        <img src="images/chevron-right.png" alt="" class="recipe-more-info" show-info>
         <img class="recipe-img" src={{recipe.recipe.image}}>
         <section class="recipe-info">
             <p class="recipe-label">{{recipe.recipe.label}}</p>
-            <span show-info><img src="" alt="" class="recipe-more-info">More Info
-            <section class="details-container">
+            <section class="details-container" hide-info>
                 <section class="recipe-details">
                     <p class="details-title">{{recipe.recipe.label}}</p>
                     <a class="recipe-link" href={{recipe.recipe.url}} target="_blank">See Full Recipe</a>
+                    <p class="details-sub">Ingredients</p>
                     <p class="ingredients" ng-repeat="ingredient in recipe.recipe.ingredients">{{ingredient.text}}</p>
+                    <p class="details-sub">Nutrition Info</p>
+                    <p class="nutrition"><pre>Calories:{{recipe.recipe.calories | number:0}}  Fat:{{recipe.recipe.digest[0].total | number:0}}  Carbs:{{recipe.recipe.digest[1].total | number:0}}  Protein:{{recipe.recipe.digest[2].total | number:0}}  Cholesterol:{{recipe.recipe.digest[3].total | number:0}}  Sodium:{{recipe.recipe.digest[4].total | number:0}}</pre></p>
                 </section>
             </section>
 
