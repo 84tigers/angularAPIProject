@@ -1,5 +1,4 @@
 <section class="search-container">
-    <!-- <img class="chicken-img" src="chicken.png"> -->
     <section class="search-input-container">
         <input type="text" class="search-input" ng-model="$ctrl.searchTerms">
         <button type="button" class="searchcritera-btn"ng-click="$ctrl.search($ctrl.searchTerms)">Seerch</button>
@@ -11,10 +10,10 @@
         <input ng-model="$ctrl.lowCarb" type="checkbox" value="&diet=low-carb"><span>Luo-Cerb</span>
         <input ng-model="$ctrl.lowFat" type="checkbox" value="&diet=low-fat"><span>Luo-Fet</span>
     </section>
-    <section class="number-input-container">
-        <span>Shuo me-a meels less thuon</span><input class="number-input" ng-model="$ctrl.calories" type="number"><span>Celuries</span>
+    <section class="number-cal-container">
+        <span>Shuo me-a meels less thuon</span><input class="number-input" ng-model="$ctrl.calories" type="number"><span>celuries</span>
     </section>
-    <section>
+    <section class="number-time-container">
         <span>Shuo me-a meels zeet vill teke-a less thuon</span><input class="number-input" ng-model="$ctrl.cookTime" type="number"><span>meenuotes tu cuok. Bork Bork Bork!</span>
     </section>
 </section>
